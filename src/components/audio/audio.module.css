@@ -1,0 +1,8 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  margin-bottom: 60px;
+  color: var(--secondaryColor);
+  z-index: 999;
+}

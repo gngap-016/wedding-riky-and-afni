@@ -1,0 +1,74 @@
+.container {
+  height: 100vh;
+  padding: 20px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/hero.png');
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(20%);
+  opacity: .8;
+}
+
+.name {
+  margin-top: 80px;
+  text-align: center;
+  font-family: 'Damion', cursive;
+  color: var(--secondaryColor);
+  padding: 0 60px;
+}
+
+.man, .woman {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.man {
+  margin-right: 100px;
+  margin-bottom: -40px;
+}
+
+.woman {
+  margin-left: 100px;
+  margin-top: -40px;
+}
+
+.and {
+  font-size: 68px;
+  font-weight: 700;
+}
+
+.descContainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.desc {
+  font-size: 14px;
+}
+
+.date {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+
+.countDown {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--secondaryColor);
+}
+
