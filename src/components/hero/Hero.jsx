@@ -5,7 +5,7 @@ import Button from '../button/Button'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Hero = () => {
-  const countDownDate = new Date("Nov 10, 2023 23:42:00").getTime();
+  const countDownDate = new Date("Nov 15, 2023 09:00:00").getTime();
 
   useEffect(() => {
     const countDown = setInterval(() => {

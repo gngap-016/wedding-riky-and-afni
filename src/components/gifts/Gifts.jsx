@@ -2,6 +2,7 @@
 import React from 'react'
 import styles from './gifts.module.css'
 import Image from 'next/image'
+import Background from '../background/Background'
 
 const copyNumber = (number) => {
   navigator.clipboard.writeText(number)
@@ -17,6 +18,7 @@ const mouseOut = () => {
 const Gifts = () => {
   return (
     <div className={styles.container} id='kado'>
+      <Background />
       <h1 className={styles.title}>Kirim Kado</h1>
       <p className={styles.desc}>Tanpa mengurangi rasa hormat, bagi Bapak/Ibu/Saudara/i yang ingin memberikan tanda kasih untuk kami, dapat melalui:</p>
       <div className={styles.giftContainer}>

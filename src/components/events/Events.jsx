@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from './events.module.css'
 import Link from 'next/link'
+import Background from '../background/Background'
 
 const Events = () => {
   return (
     <div className={styles.container} id='acara'>
+      <Background />
       <h1 className={styles.title}>Acara Pernikahan</h1>
       <p className={styles.desc}>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta’ala, insyaAllah kami akan menyelenggarakan acara pada:</p>
       <p className={styles.date}>Rabu, 15 November 2023</p>

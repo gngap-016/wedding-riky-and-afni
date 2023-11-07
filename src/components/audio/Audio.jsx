@@ -11,7 +11,7 @@ const Audio = () => {
     const song = document.querySelector('#audio');
 
     if(play) {
-      song.volume = 0.2;
+      song.volume = 0.4;
       song.play();
     } else {
       song.pause();

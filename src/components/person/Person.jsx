@@ -1,10 +1,12 @@
 import React from 'react'
 import styles from './person.module.css'
 import Image from 'next/image'
+import Background from '../background/Background'
 
 const Person = () => {
   return (
     <div id='home' className={styles.container}>
+      <Background />
       <p className={styles.salam}>Assalamualaikum Warahmatullahi Wabarakatuh</p>
       <p className={styles.text}>Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :</p>
       <div className={styles.person}>

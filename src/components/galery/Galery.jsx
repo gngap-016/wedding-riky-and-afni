@@ -3,12 +3,15 @@ import React from 'react'
 import styles from './galery.module.css'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Background from '../background/Background'
 
 const Galery = () => {
   return (
     <div 
     className={styles.container}
     >
+      {/* <div className={styles.background}></div> */}
+      <Background />
       <motion.h1 
         initial={{opacity: 0, y: -15}}
         whileInView={{opacity: 1, y: 0}}

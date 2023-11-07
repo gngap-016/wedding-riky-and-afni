@@ -1,7 +1,7 @@
 .container {
-  margin-top: 80px;
-  padding: 20px;
+  padding: 80px 20px 20px 20px;
   text-align: center;
+  position: relative;
 }
 
 .title {
@@ -47,5 +47,9 @@
 }
 
 .link {
-  font-size: 14px;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 4px;
+  color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
 }
