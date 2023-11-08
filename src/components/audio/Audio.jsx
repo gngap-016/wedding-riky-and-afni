@@ -11,7 +11,7 @@ const Audio = () => {
     const song = document.querySelector('#audio');
 
     if(play) {
-      song.volume = 0.4;
+      song.volume = .6;
       song.play();
     } else {
       song.pause();
@@ -31,7 +31,8 @@ const Audio = () => {
       <motion.div
         animate={{rotate:360}}
         transition={{repeat: Infinity, duration: 5}}
-        className={styles.audioIconWrapper} onClick={() => setPlay(!play)} >
+        className={styles.audioIconWrapper} onClick={() => setPlay(!play)}
+      >
         {play 
           ? <FontAwesomeIcon icon={faCirclePause} size='2x' />
           : <FontAwesomeIcon icon={faCirclePlay} size='2x' />
