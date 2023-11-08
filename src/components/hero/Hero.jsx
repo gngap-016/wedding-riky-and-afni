@@ -42,7 +42,12 @@ const Hero = () => {
         </motion.div>
         <div className={styles.descContainer}>
           <p className={styles.desc}>Akan melangsungkan resepsi pernikahan pada:</p>
-          <p className={styles.date}>Rabu, 15 November 2023</p>
+          <motion.p
+            initial={{opacity: 0, scale: .5}}
+            animate={{opacity: 1, scale: 1}}
+            transition={{delay: .5, duration: .25, type: 'spring'}}
+            className={styles.date}
+          >Rabu, 15 November 2023</motion.p>
         </div>
         <div className={styles.countDown}>
           <p className={styles.desc}>Waktu menuju acara:</p>
@@ -51,7 +56,7 @@ const Hero = () => {
             animate={{opacity: 1, scale: 1}}
             transition={{
               delay: .5,
-              duration: .25,
+              duration: .5,
               ease: [0, .71, .2, 1.01],
               scale: {
                 type: "spring",
