@@ -72,3 +72,8 @@
   color: var(--secondaryColor);
 }
 
+@media screen and (max-width: 450px) {
+  .name {
+    padding: 0;
+  }
+}
