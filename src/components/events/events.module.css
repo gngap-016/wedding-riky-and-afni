@@ -46,6 +46,10 @@
   margin-top: 20px;
 }
 
+.googleMaps {
+  border-radius: 12px;
+}
+
 .link {
   font-size: 12px;
   padding: 4px;

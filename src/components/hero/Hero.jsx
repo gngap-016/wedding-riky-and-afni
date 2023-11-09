@@ -30,22 +30,33 @@ const Hero = () => {
   return (
     <AnimatePresence>
       <div className={styles.container}>
-        <motion.div 
-          initial={{opacity: 0, y: 30}}
-          animate={{opacity: 1, y: 0}}
-          transition={{delay: .25, duration: .5, type: 'spring'}}
-          className={styles.name}
-        >
-          <p className={styles.man}>Riky</p>
-          <p className={styles.and}>&</p>
-          <p className={styles.woman}>Afni</p>
-        </motion.div>
+        <div className={styles.name}>
+          <motion.p
+            initial={{opacity: 0, y: 30}}
+            animate={{opacity: 1, y: 0}}
+            transition={{delay: .15, duration: .5, type: 'spring'}}
+            className={styles.man}
+          >Riky</motion.p>
+          <motion.p 
+            initial={{opacity: 0, y: 30}}
+            animate={{opacity: 1, y: 0}}
+            transition={{delay: .3, duration: .5, type: 'spring'}}
+            className={styles.and}
+          >&</motion.p>
+          <motion.p
+            initial={{opacity: 0, y: 30}}
+            animate={{opacity: 1, y: 0}}
+            transition={{delay: .5, duration: .5, type: 'spring'}}
+            className={styles.woman}
+          >Afni</motion.p>
+        </div>
+
         <div className={styles.descContainer}>
           <p className={styles.desc}>Akan melangsungkan resepsi pernikahan pada:</p>
           <motion.p
             initial={{opacity: 0, scale: .5}}
             animate={{opacity: 1, scale: 1}}
-            transition={{delay: .5, duration: .25, type: 'spring'}}
+            transition={{delay: .75, duration: .25, type: 'spring'}}
             className={styles.date}
           >Rabu, 15 November 2023</motion.p>
         </div>
@@ -55,7 +66,7 @@ const Hero = () => {
             initial={{opacity: 0, scale: .5}}
             animate={{opacity: 1, scale: 1}}
             transition={{
-              delay: .5,
+              delay: 1,
               duration: .5,
               ease: [0, .71, .2, 1.01],
               scale: {
@@ -68,7 +79,7 @@ const Hero = () => {
             className={styles.time} id='time'>00 : 00 : 00 : 00</motion.p>
         </div>
         <div className={styles.buttonContainer}>
-          <Button />
+          {/* <Button /> */}
         </div>
       </div>
     </AnimatePresence>

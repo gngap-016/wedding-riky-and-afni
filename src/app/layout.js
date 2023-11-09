@@ -10,7 +10,7 @@ export const metadata = {
     title: 'Riky & Afni',
     description: 'Undangan Pernikahan Riky dan Afni',
     url: process.env.HOST_URL,
-    siteName: 'Undangan Riky & Afni',
+    siteName: 'Undangan Pernikahan Riky dan Afni',
     images: [
       {
         url: `${process.env.HOST_URL}images/hero.png`,

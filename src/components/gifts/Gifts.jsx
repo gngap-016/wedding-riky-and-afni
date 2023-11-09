@@ -3,6 +3,7 @@ import React from 'react'
 import styles from './gifts.module.css'
 import Image from 'next/image'
 import Background from '../background/Background'
+import { motion } from 'framer-motion'
 
 const copyNumber = (number) => {
   navigator.clipboard.writeText(number)
@@ -19,10 +20,20 @@ const Gifts = () => {
   return (
     <div className={styles.container} id='kado'>
       <Background />
-      <h1 className={styles.title}>Kirim Kado</h1>
+      <motion.h1 
+        initial={{opacity: 0, y: -15}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{delay: .25, duration: .5, type: 'spring'}}
+        className={styles.title}
+      >Kirim Kado</motion.h1>
       <p className={styles.desc}>Tanpa mengurangi rasa hormat, bagi Bapak/Ibu/Saudara/i yang ingin memberikan tanda kasih untuk kami, dapat melalui:</p>
       <div className={styles.giftContainer}>
-        <div className={styles.giftItem}>
+        <motion.div 
+          initial={{opacity: 0, y: -15}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{delay: .25, duration: .5, type: 'spring'}}
+          className={styles.giftItem}
+        >
           <div className={styles.imgContainer}>
             <Image src={'/images/bca.png'} alt='' className={styles.img} fill />
           </div>
@@ -36,7 +47,7 @@ const Gifts = () => {
             </div>
             <p className={styles.name}>a.n Afni Nisandari</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
