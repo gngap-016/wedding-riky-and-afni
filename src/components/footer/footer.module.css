@@ -17,6 +17,21 @@
   color: var(--secondaryColor);
 }
 
+.lastWord {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.personName {
+  font-size: 44px;
+  font-weight: 500;
+  font-family: 'Sacramento', cursive;
+  text-align: center;
+  color: var(--secondaryColor);
+}
+
 .supported {
   margin-top: 24px;
   text-align: center;

@@ -16,6 +16,18 @@ const Footer = () => {
         transition={{delay: .25, duration: .5, type: 'spring'}}
         className={styles.salam}
       >Wassalamualaikum Warahmatullahi Wabarakatuh</motion.p>
+      <motion.p 
+        initial={{opacity: 0, y: -15}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{delay: .5, duration: .5, type: 'spring'}}
+        className={styles.lastWord}
+      >Hormat Kami,</motion.p>
+      <motion.p 
+        initial={{opacity: 0, y: -15}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{delay: .75, duration: .5, type: 'spring'}}
+        className={styles.personName}
+      >Riky & Afni</motion.p>
       <motion.div 
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
