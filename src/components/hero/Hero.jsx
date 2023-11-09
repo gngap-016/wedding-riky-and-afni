@@ -79,7 +79,7 @@ const Hero = () => {
             className={styles.time} id='time'>00 : 00 : 00 : 00</motion.p>
         </div>
         <div className={styles.buttonContainer}>
-          {/* <Button /> */}
+          <Button />
         </div>
       </div>
     </AnimatePresence>
