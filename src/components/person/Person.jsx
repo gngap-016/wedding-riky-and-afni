@@ -33,7 +33,7 @@ const Person = () => {
            }}
           className={styles.imgContainer}
         >
-          <Image src={'/images/hero.png'} alt='' className={styles.img} fill />
+          <Image src={'/images/riky.jpg'} alt='' className={styles.img} fill />
         </motion.div>
         <div className={styles.descContainer}>
           <motion.h2 
@@ -59,7 +59,7 @@ const Person = () => {
       <motion.div
         initial={{opacity: 0, scale: 0}}
         whileInView={{opacity: 1, scale: 1}}
-        transition={{delay: .5, duration: .25, 
+        transition={{delay: .25, duration: .25, 
           scale: {
             type: "spring",
             damping: 10,
@@ -74,7 +74,7 @@ const Person = () => {
            initial={{opacity: 0, scale: 0}}
            whileInView={{opacity: 1, scale: 1}}
            transition={{
-             delay: .25,
+             delay: .5,
              duration: .25,
              ease: [0, .71, .2, 1.01],
              scale: {
@@ -86,7 +86,7 @@ const Person = () => {
            }}
           className={styles.imgContainer}
         >
-          <Image src={'/images/hero.png'} alt='' className={styles.img} fill />
+          <Image src={'/images/afni.jpg'} alt='' className={styles.img} fill />
         </motion.div>
         <div className={styles.descContainer}>
           <motion.h2 

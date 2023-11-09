@@ -21,6 +21,10 @@ const Button = () => {
   
   const enableScroll = useCallback(() => {
     const rootElement = document.querySelector(":root");
+    const playMusicElement = document.querySelector('#audio');
+
+    playMusicElement.volume = .6;
+    playMusicElement.play();
 
     rootElement.style.scrollBehavior = 'smooth';
     window.onscroll = function () {
@@ -45,7 +49,7 @@ const Button = () => {
         delay: 1,
       }}
     >
-      <Link href='#home' className={styles.button} onClick={() => enableScroll()}>
+      <Link href='/#home' className={styles.button} onClick={() => enableScroll()}>
         <FontAwesomeIcon icon={faEnvelopeOpen} width={16} /> Buka Undangan
       </Link>
     </motion.div>

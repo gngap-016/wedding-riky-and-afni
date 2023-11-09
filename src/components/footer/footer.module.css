@@ -25,7 +25,7 @@
 }
 
 .myLink {
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: underline;
   cursor: pointer;
   z-index: 10;

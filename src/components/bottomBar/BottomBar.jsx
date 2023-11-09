@@ -21,9 +21,9 @@ const BottomBar = () => {
 
   return (
     <div className={`${styles.container}`} id='bottomBar'>
-      <Link href={'#home'}>Beranda</Link>
-      <Link href={'#acara'}>Acara</Link>
-      <Link href={'#kado'}>Kado</Link>
+      <Link href={'/#home'}>Beranda</Link>
+      <Link href={'/#acara'}>Acara</Link>
+      <Link href={'/#kado'}>Kado</Link>
     </div>
   )
 }

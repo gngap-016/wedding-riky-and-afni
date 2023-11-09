@@ -56,4 +56,13 @@
   border-radius: 4px;
   color: var(--secondaryColor);
   border: 1px solid var(--secondaryColor);
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+
+@media screen and (min-width: 736px) {
+  .googleMaps {
+    width: 450px;
+  }
 }

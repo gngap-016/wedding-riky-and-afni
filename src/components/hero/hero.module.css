@@ -28,7 +28,7 @@
 
 .man, .woman {
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .man {
@@ -57,7 +57,7 @@
 
 .date {
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--secondaryColor);
 }
 

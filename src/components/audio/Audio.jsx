@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 
 const Audio = () => {
   const [play, setPlay] = useState(false);
+
   const playAudio = useCallback(() => {
     const song = document.querySelector('#audio');
 
@@ -34,8 +35,8 @@ const Audio = () => {
         className={styles.audioIconWrapper} onClick={() => setPlay(!play)}
       >
         {play 
-          ? <FontAwesomeIcon icon={faCirclePause} size='2x' />
-          : <FontAwesomeIcon icon={faCirclePlay} size='2x' />
+          ? <FontAwesomeIcon icon={faCirclePause} className='gold' size='2x' />
+          : <FontAwesomeIcon icon={faCirclePlay} className='gold' size='2x' />
         }
       </motion.div>
     </div>

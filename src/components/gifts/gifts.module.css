@@ -13,12 +13,17 @@
 
 .giftContainer {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .giftItem {
   border: 2px solid var(--secondaryColor);
   padding: 12px;
   border-radius: 12px;
+  width: 100%;
 }
 
 .imgContainer {
@@ -27,7 +32,6 @@
   border-radius: 8px;
   position: relative;
   overflow: hidden;
-  /* background-color: #f1f1f1; */
 }
 
 .img {
@@ -94,4 +98,16 @@
   font-size: 18px;
   font-weight: 500;
   margin-top: 12px;
+}
+
+@media screen and (min-width: 736px) {
+  .giftItem {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .giftItem {
+    width: 50%;
+  }
 }

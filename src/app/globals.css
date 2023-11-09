@@ -4,7 +4,10 @@
 :root {
   --bg: #1E1E1E;
   --color: #FFFFFF;
-  --secondaryColor: #FFD8B3;
+  /* --secondaryColor: #FFD8B3; */
+  /* --secondaryColor: #F3BC50; */
+  --secondaryColor: #FFC26F;
+  /* --secondaryColor: #C07F00; */
 }
 
 * {
@@ -22,4 +25,25 @@ body {
   background-color: var(--bg);
   color: var(--color);
   overflow-x: hidden;
+}
+/* background: linear-gradient(to top, 
+  #d5ad6d 0%, 
+  #d5ad6d 26%, 
+  #e2ba78 35%, 
+  #a37e43 45%, 
+  #91703b 61%, 
+  #d5ad6d 100%); */
+
+.gold {
+  color: var(--secondaryColor);
+  background: linear-gradient(to top, 
+    #dfb776 0%, 
+    #e0b674 26%, 
+    #e1ba7b 35%, 
+    #c59a57 45%, 
+    #c19753 61%, 
+    #cda76b 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

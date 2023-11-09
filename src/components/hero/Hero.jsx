@@ -35,19 +35,19 @@ const Hero = () => {
             initial={{opacity: 0, y: 30}}
             animate={{opacity: 1, y: 0}}
             transition={{delay: .15, duration: .5, type: 'spring'}}
-            className={styles.man}
+            className={`${styles.man} gold`}
           >Riky</motion.p>
           <motion.p 
             initial={{opacity: 0, y: 30}}
             animate={{opacity: 1, y: 0}}
             transition={{delay: .3, duration: .5, type: 'spring'}}
-            className={styles.and}
+            className={`${styles.and} gold`}
           >&</motion.p>
           <motion.p
             initial={{opacity: 0, y: 30}}
             animate={{opacity: 1, y: 0}}
             transition={{delay: .5, duration: .5, type: 'spring'}}
-            className={styles.woman}
+            className={`${styles.woman} gold`}
           >Afni</motion.p>
         </div>
 
@@ -57,7 +57,7 @@ const Hero = () => {
             initial={{opacity: 0, scale: .5}}
             animate={{opacity: 1, scale: 1}}
             transition={{delay: .75, duration: .25, type: 'spring'}}
-            className={styles.date}
+            className={`${styles.date} gold`}
           >Rabu, 15 November 2023</motion.p>
         </div>
         <div className={styles.countDown}>
@@ -76,7 +76,7 @@ const Hero = () => {
                 restDelta: .001
               },
             }}
-            className={styles.time} id='time'>00 : 00 : 00 : 00</motion.p>
+            className={`${styles.time} gold`} id='time'>00 : 00 : 00 : 00</motion.p>
         </div>
         <div className={styles.buttonContainer}>
           <Button />
